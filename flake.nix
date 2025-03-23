@@ -22,6 +22,9 @@
         # Essentials
         openvpn
         docker
+        unzip
+        file
+        steam-run
 
         # Network tools
         nmap
@@ -32,6 +35,8 @@
 
         # Binaries / Debuggers / Reverse Engineering Tools
         nix-ld
+        strace
+        ltrace
         hexedit
         gdb
         radare2
