@@ -19,9 +19,38 @@
   in {
     devShells.${system}.default = pkgs.mkShell {
       packages = with pkgs; [
-        python3
+        # Essentials
         openvpn
+        docker
+
+        # Network tools
+        nmap
+        netcat-gnu
+        wireshark
+        burpsuite
+        gobuster
+
+        # Binaries / Debuggers / Reverse Engineering Tools
+        nix-ld
+        hexedit
+        gdb
+        radare2
+        ghidra
+        
+        # Exploits
+        metasploit
+
+        # Programming/Scripting
+        (python3.withPackages (python-pkgs: with python-pkgs; [
+          requests
+        ]))
       ];
+
+      shellHook = ''
+        echo "It's hacking time!"
+        export PS1="\[\033[1;32m\][\[\e]0;\u@\h: \
+          \w\a\]hacker@\h:\w]\$\[\033[0m\] "
+      '';
     };
   };
 }
