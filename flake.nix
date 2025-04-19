@@ -45,10 +45,15 @@
         # Exploits
         metasploit
 
+        # Other
+        steghide
+
         # Programming/Scripting
         nasm
         (python3.withPackages (python-pkgs: with python-pkgs; [
           requests
+          sage
+          pycrypto
         ]))
       ];
 
