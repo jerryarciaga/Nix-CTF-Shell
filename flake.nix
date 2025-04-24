@@ -45,9 +45,17 @@
         # Exploits
         metasploit
 
+        # Other
+        steghide
+
         # Programming/Scripting
+        nasm
         (python3.withPackages (python-pkgs: with python-pkgs; [
+          pwntools
           requests
+          numpy
+          z3-solver
+          pycrypto
         ]))
       ];
 
