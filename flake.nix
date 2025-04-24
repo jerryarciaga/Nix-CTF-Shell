@@ -51,8 +51,10 @@
         # Programming/Scripting
         nasm
         (python3.withPackages (python-pkgs: with python-pkgs; [
+          pwntools
           requests
-          sage
+          numpy
+          z3-solver
           pycrypto
         ]))
       ];
