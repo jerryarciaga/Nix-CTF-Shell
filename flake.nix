@@ -46,8 +46,9 @@
         # Exploits
         metasploit
 
-        # Other
+        # Steganography
         steghide
+        zsteg
 
         # Programming/Scripting
         nasm
