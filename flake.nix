@@ -61,6 +61,8 @@
       ];
 
       shellHook = ''
+        alias rot13="tr 'A-Za-z' 'N-ZA-Mn-za-m'"
+
         echo "It's hacking time!"
         export PS1="\[\033[1;32m\][\[\e]0;\u@\h: \
           \w\a\]hacker@\h:\w]\$\[\033[0m\] "
