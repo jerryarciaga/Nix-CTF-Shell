@@ -43,6 +43,7 @@
         radare2
         ghidra
         binwalk
+        fastjar
         
         # Exploits
         metasploit
