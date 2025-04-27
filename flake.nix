@@ -42,11 +42,13 @@
         gdb
         radare2
         ghidra
+        binwalk
         
         # Exploits
         metasploit
 
-        # Steganography
+        # Steganography / Image hacks
+        exiftool
         steghide
         zsteg
 
