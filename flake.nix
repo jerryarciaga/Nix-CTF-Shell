@@ -51,6 +51,7 @@
         exiftool
         steghide
         zsteg
+        pngcheck
 
         # Programming/Scripting
         nasm
