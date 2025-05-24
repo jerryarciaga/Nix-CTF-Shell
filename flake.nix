@@ -48,6 +48,9 @@
         # Exploits
         metasploit
 
+        # Brute Forcing
+        hydra
+
         # Steganography / Image hacks
         exiftool
         steghide
